@@ -16,3 +16,18 @@ Currently, two official plugins are available:
 - [Vite Docs](https://vitejs.dev/guide/)
 - [Tailwind Docs](https://tailwindcss.com/docs/installation)
 - [Lucide Icons Docs](https://lucide.dev/icons/)
+
+# How to use
+
+in the terminal, write :
+
+```
+git clone https://github.com/Thomasgsn/thomas-vite-template.git
+```
+
+then
+
+```
+cd thomas-vite-template
+npm install
+```
