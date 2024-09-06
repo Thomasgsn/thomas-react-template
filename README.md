@@ -1,7 +1,7 @@
 Thomas's Template
 ======================
 
-# React + Vite + TailwindCss + Lucide Icon
+# React + Vite + TailwindCss + React Icon
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -15,7 +15,7 @@ Currently, two official plugins are available:
 - [React Docs](https://react.dev/learn)
 - [Vite Docs](https://vitejs.dev/guide/)
 - [Tailwind Docs](https://tailwindcss.com/docs/installation)
-- [Lucide Icons Docs](https://lucide.dev/icons/)
+- [React Icons Docs](https://react-icons.github.io/react-icons/)
 
 # How to use
 
