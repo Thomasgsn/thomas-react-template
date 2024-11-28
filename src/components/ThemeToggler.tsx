@@ -1,4 +1,4 @@
-import { GoMoon, GoSun  } from "react-icons/go";
+import { GoMoon, GoSun } from "react-icons/go";
 import { useEffect, useState } from "react";
 
 export const ThemeToggler = () => {
@@ -17,25 +17,22 @@ export const ThemeToggler = () => {
       document.body.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-
-    setTimeout(() => {}, 500);
   }, [darkMode]);
 
+  const handleClick = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div
-      className="relative w-16 h-16 flex items-center justify-center cursor-pointer rounded-full p-1 bg-teal-500 dark:bg-gray-900"
-      onClick={() => setDarkMode(!darkMode)}
+    <button
+      className="hover:scale-110 transition-transform"
+      onClick={handleClick}
     >
-      <GoSun
-        size={40}
-        className="text-yellow-400 absolute transition-opacity"
-        style={{ opacity: darkMode ? 0 : 1 }}
-      />
-      <GoMoon
-        size={40}
-        className="text-white absolute transition-opacity"
-        style={{ opacity: darkMode ? 1 : 0 }}
-      />
-    </div>
+      {darkMode ? (
+        <GoSun size={24} strokeWidth={0.5} className="icon" />
+      ) : (
+        <GoMoon size={24} strokeWidth={0.5} className="icon" />
+      )}
+    </button>
   );
 };

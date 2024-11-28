@@ -1,13 +1,23 @@
 import { ThemeToggler } from "./components/ThemeToggler";
 
+{/* ↓ Delete this ↓ */}
+import { Del } from "./Delete/Del";
+{/* ↑ Delete this ↑ */}
+
 function App() {
   return (
     <>
-      <div className="bg-slate-50 dark:bg-slate-800 h-screen p-2">
-        <ThemeToggler />
-        <h1 className="text-slate-900 dark:text-white pt-2">
-          React + Vite + TailwindCss + React Icon
-        </h1>
+      <div className="h-screen bg-light-background dark:bg-dark-background transition-colors">
+        <div className="mx-[5vw] sm:mx-[10vw] md:mx-[20vw] py-16 justify-between flex items-center">
+          <h1 className="text-lg">
+            React TypeScript Thomas's Template<span className="animate-pulse">.</span>
+          </h1>
+          <ThemeToggler />
+        </div>
+
+        {/* ↓ Delete this ↓ */}
+        <Del />
+        {/* ↑ Delete this ↑ */}
       </div>
     </>
   );
