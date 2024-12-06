@@ -21,7 +21,7 @@ Currently, two official plugins are available:
 
 in the terminal, write :
 ```
-https://github.com/Thomasgsn/thomas-react-template.git
+git clone https://github.com/Thomasgsn/thomas-react-template.git
 ```
 then
 ```
