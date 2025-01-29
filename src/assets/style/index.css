@@ -1,21 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  font-family: "Lexend", sans-serif;
+@theme {
+  --color-primary-dark: oklch(21.03% 0.0059 285.89);
+  --color-primary-light: oklch(96.83% 0.0069 247.9);
+  --font-lexend: "Lexend", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-.icon {
-  @apply text-black dark:text-white font-medium;
+@utility bg-primary-bg {
+  @apply bg-primary-light;
+  @variant dark {
+    @apply bg-primary-dark;
+  }
+}
+
+@utility text-inv-colors {
+  @apply text-white;
+  @variant dark {
+    @apply text-black;
+  }
+}
+
+@utility margin-auto {
+  @apply mx-[5vw] md:mx-[7vw] lg:mx-[8.5vw] xl:mx-[10vw];
+}
+
+html,
+body {
+  @apply font-lexend text-black dark:text-white;
+  scroll-behavior: smooth;
 }
