@@ -1,7 +1,7 @@
 export const Del = () => {
   return (
-    <div className="flex justify-center">
-      <div className=" flex gap-20 w-[80vw] md:w-[60vw]">
+    <div className="flex justify-center h-screen">
+      <div className="flex gap-20 w-[80vw] md:w-[60vw]">
         <div className="hidden lg:block bg-right w-[35rem] h-[35rem] bg-[url('/image.webp')] bg-cover rounded-md drop-shadow-2xl dark:drop-shadow-xl" />
         <div className="flex flex-col gap-10">
           <div>

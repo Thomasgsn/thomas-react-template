@@ -16,6 +16,11 @@ Get my template
 
 Install dependencies
 ```
+# with npm
+  cd thomas-react-template
+  npm i
+```
+```
 # with pnpm
   cd thomas-react-template
   pnpm i
@@ -27,6 +32,10 @@ Install dependencies
 ```
 
 To run
+```
+# with pnpm
+  npm run dev
+```
 ```
 # with pnpm
   pnpm dev

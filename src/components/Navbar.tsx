@@ -33,7 +33,7 @@ const ThemeToggler = () => {
 
 export const Navbar = () => {
   return (
-    <nav className="margin-auto py-16 justify-between flex items-center z-50 sticky -top-6 ">
+    <nav className="margin-auto py-8 justify-between flex items-center z-50 sticky -top-6 ">
       <h1 className="text-lg">
         React TypeScript Thomas's Template
         <span className="animate-pulse">.</span>
