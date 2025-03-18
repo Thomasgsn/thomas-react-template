@@ -21,19 +21,21 @@ const ThemeToggler = () => {
     setDarkMode((prev) => !prev);
   };
 
+  const ThemeIcon = darkMode ? GoSun : GoMoon;
+
   return (
     <button
       onClick={handleClick}
       className="hover:scale-110 transition-transform cursor-pointer"
     >
-      {darkMode ? <GoSun size={24} strokeWidth={.5} /> : <GoMoon size={24} strokeWidth={.5} />}
+      <ThemeIcon size={22} strokeWidth={.5} />
     </button>
   );
 };
 
 export const Navbar = () => {
   return (
-    <nav className="margin-auto py-8 justify-between flex items-center z-50 sticky -top-6 ">
+    <nav className="centered py-4 justify-between flex items-center backdrop-blur border-b border-black/10 dark:border-white/10 sticky top-0 z-50">
       <h1 className="text-lg">
         React TypeScript Thomas's Template
         <span className="animate-pulse">.</span>

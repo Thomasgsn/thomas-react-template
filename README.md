@@ -48,6 +48,7 @@ Currently, two official plugins are available:
 ## 🔗 Usefull links
 [![](https://img.shields.io/badge/useHooks-20B2AA?style=for-the-badge&logo=npm)](https://usehooks.com/)
 [![](https://img.shields.io/badge/ui.shadcn-20B2AA?style=for-the-badge&logo=npm)](https://ui.shadcn.com/docs/installation/vite)
+[![](https://img.shields.io/badge/zustand-20B2AA?style=for-the-badge&logo=npm)](https://zustand.docs.pmnd.rs/getting-started/introduction)
 
 [![](https://img.shields.io/badge/Playfair%20Display%20Font-42def4?style=for-the-badge&logo=googlefonts)](https://fonts.google.com/specimen/Playfair+Display)
 [![](https://img.shields.io/badge/Outfit%20Font-42def4?style=for-the-badge&logo=googlefonts)](https://fonts.google.com/specimen/Outfit)
