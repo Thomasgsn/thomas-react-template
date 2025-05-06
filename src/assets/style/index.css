@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'JokkerVF';
   src: url('../font/JokkerVF.woff') format('woff');
-  font-weight: normal; 
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -49,7 +49,6 @@ body {
   @apply bg-blue-500/30 dark:bg-purple-400/30;
 }
 
-
 .centered {
   @apply px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-23;
 }
@@ -61,4 +60,12 @@ p.span-highlight span {
     content: '';
     @apply content-[''] absolute bottom-0 left-0 w-full h-1/2 bg-blue-500/25 dark:bg-purple-400/25 translate-y-0.5;
   }
+}
+
+.input {
+  @apply w-full focus:outline-none focus:ring-2 border-0 rounded-md placeholder-neutral-400 dark:placeholder-neutral-500 text-sm px-2.5 py-1.5 shadow-sm bg-white dark:bg-neutral-900 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 disabled:cursor-not-allowed disabled:opacity-75;
+}
+
+.submit {
+  @apply disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-black bg-neutral-900 hover:bg-neutral-800 disabled:bg-neutral-900 aria-disabled:bg-neutral-900 dark:bg-neutral-200 dark:hover:bg-white dark:aria-disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 w-full flex justify-center items-center;
 }

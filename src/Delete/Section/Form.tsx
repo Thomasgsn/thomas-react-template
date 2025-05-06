@@ -52,7 +52,6 @@ export const Form = () => {
     };
 
     const labelClass = "ml-1 font-medium text-sm text-neutral-700 dark:text-neutral-200 capitalize";
-    const inputClass = "w-full focus:outline-none focus:ring-2 border-0 rounded-md placeholder-neutral-400 dark:placeholder-neutral-500 text-sm px-2.5 py-1.5 shadow-sm bg-white dark:bg-neutral-900 ring-1 ring-inset ring-neutral-300 dark:ring-neutral-700 disabled:cursor-not-allowed disabled:opacity-75";
     const iconRightClass = "absolute bottom-0 -translate-y-1/2 right-2 flex items-center"
     const radioLabelClass = "text-neutral-400 dark:text-neutral-500 has-checked:text-blue-500 transition-colors cursor-pointer"
 
@@ -68,8 +67,8 @@ export const Form = () => {
                             type="text"
                             id="firstname"
                             name="firstname"
+                            className="input"
                             value={form.firstname}
-                            className={inputClass}
                             placeholder="Firstname"
                             onChange={handleChange}
                         />
@@ -84,7 +83,7 @@ export const Form = () => {
                             id="lastname"
                             name="lastname"
                             value={form.lastname}
-                            className={inputClass}
+                            className="input"
                             placeholder="Lastname"
                             onChange={handleChange}
                         />
@@ -100,7 +99,7 @@ export const Form = () => {
                             name="country"
                             value={form.country}
                             onChange={handleChange}
-                            className={`${inputClass} appearance-none`}
+                            className="input appearance-none"
                         >
                             <option selected disabled value="">Select a country</option>
                             {countries.sort().map((c) => <option key={c} value={c}>{c}</option>)}
@@ -133,7 +132,7 @@ export const Form = () => {
                             type="email"
                             name="email"
                             value={form.email}
-                            className={inputClass}
+                            className="input"
                             placeholder="Email"
                             onChange={handleChange}
                         />
@@ -147,7 +146,7 @@ export const Form = () => {
                             id="password"
                             name="password"
                             value={form.password}
-                            className={inputClass}
+                            className="input"
                             placeholder="Password"
                             onChange={handleChange}
                             type={seePassword ? 'text' : 'password'}
@@ -160,7 +159,7 @@ export const Form = () => {
                     </label>
                 </div>
             </div>
-            <button type="submit" className="disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 font-medium rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 shadow-sm text-white dark:text-black bg-neutral-900 hover:bg-neutral-800 disabled:bg-neutral-900 aria-disabled:bg-neutral-900 dark:bg-neutral-200 dark:hover:bg-white dark:aria-disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 w-full flex justify-center items-center">Submit</button>
+            <button type="submit" className="submit">Submit</button>
         </form>
     );
 };

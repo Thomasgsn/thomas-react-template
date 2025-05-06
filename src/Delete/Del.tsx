@@ -36,7 +36,7 @@ export const Del = () => {
                 <a href="#form">Form</a>
               </li>
               <li>
-                <a href="#list">List of understandable icon</a>
+                <a href="#modal">Customizable modal</a>
               </li>
             </ul>
           </div>
